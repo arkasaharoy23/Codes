@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9e8f5;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f4ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.health-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #2C5F9E;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+.health-icon::before, .health-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #2C5F9E;
+    border-radius: 50%;
+}
+
+.health-icon::before {
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    left: 10px;
+}
+
+.health-icon::after {
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 12px;
+}
+
+h1 {
+    color: #2C5F9E;
+}
+
+h2 {
+    margin: 20px 0;
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.log-in {
+    background-color: hsl(213, 56%, 40%);
+    color: white;
+}
+
+.sign-up {
+    background-color: transparent;
+    border: 2px solid #2C5F9E;
+    color: #2C5F9E;
+}
+
+.log-in:hover {
+    background-color: #1A3C6D;
+}
+
+.sign-up:hover {
+    background-color: #e7f1ff;
+}
+
+.right-panel {
+    flex: 1;
+    background-image: url('your-image-url-here.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
