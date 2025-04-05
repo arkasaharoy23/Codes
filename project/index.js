@@ -61,6 +61,10 @@ app.get("/camp",(req,res)=>{
     res.render("camp", { layout: false }); 
 });
 
+app.get("/comingSoon",(req,res)=>{
+    res.render("comingSoon", { layout: false }); 
+});
+
 app.listen(port,()=>{
     console.log('app is runnng')
 });  //http://localhost:8000/
