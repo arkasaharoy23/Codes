@@ -111,7 +111,16 @@ p {
 
 .right-panel {
     flex: 1;
-    background-image: url('your-image-url-here.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.background-image{
+    height: 100%;
+    width: 100%;
 }
